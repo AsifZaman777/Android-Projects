@@ -143,7 +143,7 @@
             &nbsp;
 
             &nbsp;
-            This exception might be the intolerable exception because if somebody clciks the calculate button without inserting any values(Weight, Height) then the app will crash instantinously. To handle this problem `setError()` and `requestFocus()` is used how we can alert the user to input the expected value.
+            This exception might be the intolerable exception because if somebody clicks the calculate button without inserting any values(Weight, Height) then the app will crash instantinously. To handle this problem `setError()` and `requestFocus()` is used how we can alert the user to input the expected value.
            ```
              if (heightString.equals(""))
                {
