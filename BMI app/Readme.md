@@ -62,6 +62,7 @@
 
         });
     ```
+    ![](https://github.com/AsifZaman777/Android-Projects/blob/main/BMI%20app/BMI%20Doc%20photo/Login%20activity.png "Login activity" )
 
      - Activites are nothing but the page or view that is displayed to the user. In the app the first activity is Login activity where user put there name and password if these are correct then the the next activity will be intented.
      - In the app Constraint Layout is used. But at the time of using Constraints layout we have to always be concern about the horizontal and vertical constraining of every element.
@@ -105,6 +106,7 @@
         }
 
     ``` 
+   ![](https://github.com/AsifZaman777/Android-Projects/blob/main/BMI%20app/BMI%20Doc%20photo/Login%20dissable.png " Login dissable " )
 
 ---
 
@@ -136,6 +138,8 @@
     - TextView Result : 
         - At last a TextView has been designed in a XML file to display the BMI result
         - At last physical condition is diplayed by the `Toast-Text` 
+     
+          ![](https://github.com/AsifZaman777/Android-Projects/blob/main/BMI%20app/BMI%20Doc%20photo/Phy%20Cond.png " Physical Condition ")     
     
     - Exception handling :
          
@@ -144,6 +148,7 @@
 
             &nbsp;
             This exception might be the intolerable exception because if somebody clicks the calculate button without inserting any values(Weight, Height) then the app will crash instantinously. To handle this problem `setError()` and `requestFocus()` is used how we can alert the user to input the expected value.
+            
            ```
              if (heightString.equals(""))
                {
@@ -153,6 +158,7 @@
                }
 
            ``` 
+ ![](https://github.com/AsifZaman777/Android-Projects/blob/main/BMI%20app/BMI%20Doc%20photo/Alert.png "Exception handling")
 
 ---
 
