@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".BmiActivity">
+
+    <TextView
+        android:id="@+id/bmiText"
+        android:layout_width="316dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:paddingLeft="26sp"
+        android:text="Body Mass Index"
+
+        android:textColor="@color/purple_200"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <EditText
+        android:id="@+id/userH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:backgroundTint="@color/purple_200"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Meter"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#9C9C9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmiText" />
+
+    <EditText
+        android:id="@+id/userW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:backgroundTint="@color/purple_200"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="KG"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#8A8A8A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userH" />
+
+    <TextView
+        android:id="@+id/Height"
+        android:layout_width="109dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="544dp"
+        android:text="Height  :"
+        android:textColor="@color/purple_200"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bmiText" />
+
+    <TextView
+        android:id="@+id/Weight"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="468dp"
+        android:text="Weight : "
+        android:textColor="@color/purple_200"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Height" />
+
+    <TextView
+        android:id="@+id/bmiResult"
+        android:layout_width="372dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="108dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="103dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="@+id/Weight"
+        app:layout_constraintTop_toBottomOf="@+id/Weight" />
+
+</android.support.constraint.ConstraintLayout>
