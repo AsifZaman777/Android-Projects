@@ -25,7 +25,6 @@ public class BmiActivity extends AppCompatActivity {
 
       calculate=(Button) findViewById(R.id.calc);
       calculation=(TextView) findViewById(R.id.bmiResult);
-      DecimalFormat df=new DecimalFormat("0.00");
 
        calculate.setOnClickListener(new View.OnClickListener() {
            @Override
@@ -50,7 +49,7 @@ public class BmiActivity extends AppCompatActivity {
                float user_weight=Float.parseFloat(weightString);
 
                float bmi=calculation(user_weight,user_height);
-               calculation.setText("Your BMI is :  "+df.format(bmi));
+               calculation.setText("Your BMI is :  "+String.format("%0.2f",bmi)); // String format added
                comment(bmi);
            }
        });
